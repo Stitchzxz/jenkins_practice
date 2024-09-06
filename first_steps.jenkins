@@ -11,12 +11,12 @@ pipeline {
   stages {
     stage("First step") {
 	  steps {
-	    sh 'ssh root@ubs3 \'hostname\''
+	    sh 'ssh nikolay@docker \'hostname\''
 	  }
 	}
 	stage("Second step") {
 	  steps {
-	    sh 'ssh root@ubs3 \'uptime\''
+	    sh 'ssh nikolay@docker \'uptime\''
 	  }
 	}
 	stage("Step start docker") {
